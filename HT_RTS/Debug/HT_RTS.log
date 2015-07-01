@@ -1,0 +1,62 @@
+﻿빌드 시작: 2015-06-29 오후 3:59:33
+     1>2 노드의 "C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\HT_RTS\HT_RTS.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\HT_RTS.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Includes" /I"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\Eigen\Includes" /I"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\GL\Includes" /I"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\Omni\Includes" /I"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\Omni\Includes\utilities" /I"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\FADBAD\Includes" /I"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\KinectSrc\include" /I"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\KinectSrc\inc" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\HT_RTS.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt OpenGLControl.cpp
+         OpenGLControl.cpp
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\cdibn.h(542): warning C4005: 'M_PI' : 매크로 재정의
+                 c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\3rdparty\eigen\includes\geometry(13) : 'M_PI'의 이전 정의를 참조하십시오.
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\openglcontrol.cpp(308): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\openglcontrol.cpp(1613): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(867) : 'itoa' 선언을 참조하십시오.
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\openglcontrol.cpp(1627): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(867) : 'itoa' 선언을 참조하십시오.
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\openglcontrol.cpp(1694): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(246) : 'stricmp' 선언을 참조하십시오.
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\openglcontrol.cpp(1781): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(246) : 'stricmp' 선언을 참조하십시오.
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\openglcontrol.cpp(1808): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\openglcontrol.cpp(229): warning C4700: 초기화되지 않은 'liCounter2' 지역 변수를 사용했습니다.
+     1>c:\users\tw\dropbox\99_teachingsw_etri\h&t_rts_vt\ht_rts\openglcontrol.cpp(229): warning C4700: 초기화되지 않은 'liCounter1' 지역 변수를 사용했습니다.
+       ResourceCompile:
+         모든 출력이 최신 상태입니다.
+       ManifestResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Debug\HT_RTS.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\GL\Libs\Release" /LIBPATH:"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Libs" /LIBPATH:"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\3rdparty\KinectSrc\lib\x86" opengl32.lib glu32.lib TeachingSWd.lib TeachingSeriald.lib TeachingTCPIPd.lib Kinect10.lib /MANIFEST /ManifestFile:"Debug\HT_RTS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Debug\HT_RTS.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Debug\HT_RTS.lib" /MACHINE:X86 Debug\HT_RTS.res
+         Debug\HT_RTS.exe.embed.manifest.res
+         Debug\CDibN.obj
+         Debug\ConnectSocket.obj
+         Debug\HT_RTS.obj
+         Debug\HT_RTSDlg.obj
+         Debug\ImageDisp.obj
+         Debug\IOTab.obj
+         Debug\Kde.obj
+         Debug\KinectConnection.obj
+         Debug\LargeText.obj
+         Debug\Light.obj
+         Debug\MainControlTab.obj
+         Debug\NuiImageBuffer.obj
+         Debug\OpenGLControl.obj
+         Debug\ProgramTab.obj
+         Debug\stdafx.obj
+         Debug\VisionTab.obj
+     1>TeachingSWd.lib(hduError.obj) : warning LNK4099: 'vc100.pdb' PDB를 'TeachingSWd.lib(hduError.obj)' 또는 'C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Debug\vc100.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+     1>TeachingSeriald.lib(CommThread.obj) : warning LNK4099: 'vc100.pdb' PDB를 'TeachingSeriald.lib(CommThread.obj)' 또는 'C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Debug\vc100.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+     1>TeachingTCPIPd.lib(Network_HM.obj) : warning LNK4099: 'vc100.pdb' PDB를 'TeachingTCPIPd.lib(Network_HM.obj)' 또는 'C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Debug\vc100.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\HT_RTS.exe.embed.manifest" /manifest Debug\HT_RTS.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         HT_RTS.vcxproj -> C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\Debug\HT_RTS.exe
+       FinalizeBuildStatus:
+         "Debug\HT_RTS.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\HT_RTS.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\tw\Dropbox\99_TeachingSW_ETRI\H&T_RTS_vT\HT_RTS\HT_RTS.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.66

@@ -1,0 +1,38 @@
+﻿빌드 시작: 2014-10-21 오후 4:05:14
+     1>2 노드의 "D:\김태우\Project\양팔로봇\4차년도\00_프로그램\H&T_RTS\HT_RTS\HT_RTS.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "x64\Release\HT_RTS.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Libraries\glut-3.7.6-bin" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"x64\Release\HT_RTS.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt ConnectSocket.cpp HT_RTS.cpp HT_RTSDlg.cpp MainControlTab.cpp OpenGLControl.cpp
+         ConnectSocket.cpp
+         HT_RTS.cpp
+         HT_RTSDlg.cpp
+         MainControlTab.cpp
+     1>MainControlTab.cpp(244): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MainControlTab.cpp(274): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MainControlTab.cpp(305): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MainControlTab.cpp(335): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MainControlTab.cpp(364): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         OpenGLControl.cpp
+       ResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\김태우\Project\양팔로봇\4차년도\00_프로그램\H&T_RTS\x64\Release\HT_RTS.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Libraries\glut-3.7.6-bin" opengl32.lib glu32.lib glut32.lib /MANIFEST /ManifestFile:"x64\Release\HT_RTS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\김태우\Project\양팔로봇\4차년도\00_프로그램\H&T_RTS\x64\Release\HT_RTS.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\김태우\Project\양팔로봇\4차년도\00_프로그램\H&T_RTS\x64\Release\HT_RTS.lib" /MACHINE:X64 x64\Release\HT_RTS.res
+         x64\Release\ConnectSocket.obj
+         x64\Release\HT_RTS.obj
+         x64\Release\HT_RTSDlg.obj
+         x64\Release\IOTab.obj
+         x64\Release\LargeText.obj
+         x64\Release\MainControlTab.obj
+         x64\Release\OpenGLControl.obj
+         x64\Release\ProgramTab.obj
+         x64\Release\stdafx.obj
+         x64\Release\VisionTab.obj
+     1>OpenGLControl.obj : error LNK2001: __imp___glutCreateWindowWithExit 외부 기호를 확인할 수 없습니다.
+     1>D:\김태우\Project\양팔로봇\4차년도\00_프로그램\H&T_RTS\x64\Release\HT_RTS.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+     1>"D:\김태우\Project\양팔로봇\4차년도\00_프로그램\H&T_RTS\HT_RTS\HT_RTS.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.97
