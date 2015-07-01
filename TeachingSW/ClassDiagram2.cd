@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="robotics_algo" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADQAQAAAAAAAIAABEAIIAEAAQAACAAEAAAGEAAAAoI=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\robotics_algo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="hMatrix" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CJAAAAAAEAAAIMAAAAEAASAKEAAAAAAACAAgAAAAAAA=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\hMatrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Link" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAAEgA=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\linkedstructure.h</FileName>
+      <NewMemberFileName>linkedstructure.h</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LinkedStructure" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAIAAAIAUAAAIAAACAAAAAAIAAAAAQBIAEMmA=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\linkedstructure.h</FileName>
+      <NewMemberFileName>linkedstructure.h</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeachingSW_HM">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABLbQgYEBIBgANgRBaQZQEcaAYAMCYCEAIBsCRIAAoo=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\TeachingSW_HM.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="__unnamed_struct_0001_1" Collapsed="true">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAACAEAAAAAABAAAAAAIAAAAAAAABAAAAAACAAAA=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\TeachingSW_HM.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Color" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAoAQABAAAAAAA=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\linkedstructure.h</FileName>
+      <NewMemberFileName>linkedstructure.h</NewMemberFileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="T_NetData" Collapsed="true">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\TeachingSW_HM.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Robot" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\01_ETRI_PROJECTS\DUAL_ARM\06_TeachingSW_HM\TeachingSW_HM\Includes\TeachingSW_HM.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
