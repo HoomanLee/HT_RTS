@@ -1,0 +1,129 @@
+// gcc arrowTest.c -lglut -lGLU && ./a.out//-------------------------
+#include <GL/glut.h>
+#include <math.h>
+#include <stdio.h>
+ 
+void coordSysArrow(float x1, float y1_, float z1, float x2, float y2, float z2)
+{
+  glPushMatrix();
+  glPushAttrib( GL_POLYGON_BIT ); // includes GL_CULL_FACE
+  glDisable(GL_CULL_FACE); // draw from all sides
+ 
+  float v[3];
+  // Calculate arrow parameters:
+  v[0] = x2-x1;
+  v[1] = y2-y1_;
+  v[2] = z2-z1;
+ 
+  // Draw single line:
+  glBegin(GL_LINES);
+  glVertex3f(x1, y1_, z1); // from
+  glVertex3f(x2, y2, z2); // to
+  glEnd(); // GL_LINES
+ 
+  // Easy enough - now let's make the cone in the arrow!
+  if (1 == 1) // Make a cone! Change test to "0 == 1" to disable this part...
+    {
+      float norm_of_v = sqrt( v[0]*v[0] + v[1]*v[1] + v[2]*v[2] );
+ 
+      // Size of cone in arrow:
+      float coneFractionAxially = 0.2;
+      float coneFractionRadially = 0.1;
+ 
+      float coneHgt = coneFractionAxially * norm_of_v;
+      float coneRadius = coneFractionRadially * norm_of_v;
+ 
+      float normalized_v[3];
+      normalized_v[0] = v[0] / norm_of_v;
+      normalized_v[1] = v[1] / norm_of_v;
+      normalized_v[2] = v[2] / norm_of_v;
+ 
+      // Construct transformation matrix
+      float mat44[16] =
+        {1,0,0,0,
+         0,1,0,0,
+         0,0,1,0,
+         0,0,0,1};
+ 
+      mat44[0] = normalized_v[0]; // [0,0]
+      mat44[5] = normalized_v[1]; // [1,1]
+      mat44[10] = normalized_v[2]; // [2,2]
+      mat44[15] = 1.0;
+ 
+      if (0==1)
+        {
+          int i;
+          for (i=0; i<16; i++)
+            {
+              printf ("[%i]: %f\n", i, mat44[i]);
+            }
+          exit(EXIT_FAILURE);
+        }
+ 
+      float vConeLocation[3];
+      vConeLocation[0] = (1.0-coneFractionAxially) * v[0];
+      vConeLocation[1] = (1.0-coneFractionAxially) * v[1];
+      vConeLocation[2] = (1.0-coneFractionAxially) * v[2];
+ 
+      // Move and rotate in position:
+      glTranslatef( vConeLocation[0], vConeLocation[1], vConeLocation[2] );
+      if (0 == 1) //  <===== PROBLEM HERE?!?! WHAT?
+        {
+          //glLoadIdentity()
+          glMultMatrixf( mat44 );
+        }
+      GLUquadric* cone_obj = gluNewQuadric();
+      gluCylinder(cone_obj, 0, coneHgt, coneRadius, 8, 1);
+    }
+  glPopAttrib(); // GL_CULL_FACE
+  glPopMatrix();
+}
+ 
+float x1 = 0.0; float y1_ = 0.0; float z1 = 0.0;
+float x2 = 1.0; float y2 = 1.0; float z2 = 0.0;
+ 
+void display()
+{
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+ 
+  glMatrixMode(GL_MODELVIEW);
+  glLoadIdentity();
+  glTranslatef(0, 0, -5);
+ 
+  glColor4ub(255,128,128,255); // red, green, blue, alpha
+ 
+  int drawArrow = 1; // turn on/off here
+  if (drawArrow == 1)
+    coordSysArrow(x1, y1_, z1, x2, y2, z2);
+  else {
+    glBegin(GL_LINES);
+    glVertex3f(x1, y1_, z1); // from
+    glVertex3f(x2, y2, z2); // to
+    glEnd(); // GL_LINES
+  }
+  glFlush();
+  glutSwapBuffers();
+}
+ 
+void reshape(int w, int h)
+{
+  glViewport(0, 0, w, h);
+ 
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  gluPerspective( 60, (double)w / (double)h, 0.01, 100 );
+}
+ 
+int main(int argc, char **argv)
+{
+  glutInit(&argc, argv);
+  glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
+ 
+  glutInitWindowSize(800,600);
+  glutCreateWindow("Arrowing");
+ 
+  glutDisplayFunc(display);
+  glutReshapeFunc(reshape);
+  glutMainLoop();
+  return EXIT_SUCCESS;
+}
